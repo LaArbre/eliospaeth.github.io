@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Veille — Elio Spaeth</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="avatar">ES</div>
+          <div>
+            <div class="muted">Portfolio BTS SIO SLAM</div>
+            <h1>Elio Spaeth</h1>
+            <div class="muted">Étudiant en BTS SIO — Spécialité SLAM</div>
+          </div>
+        </div>
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="experiences.html">Expériences</a>
+          <a href="projets.html">Projets</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>📡 Veille Technologique</h2>
+        <p class="muted">Actualités adaptées à mon parcours BTS SIO SLAM</p>
+        
+        <div class="rss-filters">
+          <button class="filter-btn active" data-filter="all">Toutes les sources</button>
+          <button class="filter-btn" data-filter="dev">Développement</button>
+          <button class="filter-btn" data-filter="sio">BTS SIO</button>
+          <button class="filter-btn" data-filter="secu">Sécurité</button>
+        </div>
+
+        <div class="rss-feeds">
+          <div class="loading-articles">
+            <div class="spinner"></div>
+            <p>Chargement des actualités...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>📚 Méthodologie de Veille</h2>
+        
+        <div class="methodology-grid">
+          <div class="method-item">
+            <h3>🛠️ Outils utilisés</h3>
+            <ul>
+              <li>Feedly pour l'aggrégation des flux RSS</li>
+              <li>Google Alerts pour les mots-clés spécifiques</li>
+              <li>Twitter pour la veille en temps réel</li>
+              <li>Reddit (subreddits techniques)</li>
+            </ul>
+          </div>
+          
+          <div class="method-item">
+            <h3>🎯 Thèmes suivis</h3>
+            <ul>
+              <li>Évolutions des langages de programmation</li>
+              <li>Nouvelles vulnérabilités en cybersécurité</li>
+              <li>Framework PHP et alternatives</li>
+              <li>Bonnes pratiques en développement web</li>
+            </ul>
+          </div>
+          
+          <div class="method-item">
+            <h3>⏱️ Fréquence</h3>
+            <ul>
+              <li>Veille quotidienne : 30 minutes</li>
+              <li>Analyse hebdomadaire : synthèse des tendances</li>
+              <li>Mise à jour mensuelle : ajustement des sources</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>⚖️ Veille Juridique</h2>
+        
+        <div class="juridique-content">
+          <article class="juridique-item">
+            <h3>🔒 RGPD et développement</h3>
+            <p class="meta">Dernière mise à jour : Mars 2025</p>
+            <p>Obligations légales pour les applications web et mobiles.</p>
+            <ul>
+              <li>Consentement explicite pour les cookies</li>
+              <li>Droit à la portabilité des données</li>
+              <li>Délai de conservation des données personnelles</li>
+              <li>Obligation de sécurité des données</li>
+            </ul>
+          </article>
+
+          <article class="juridique-item">
+            <h3>📝 Propriété intellectuelle</h3>
+            <p class="meta">Dernière mise à jour : Février 2025</p>
+            <p>Respect des licences logicielles et des droits d'auteur.</p>
+            <ul>
+              <li>Licences open source (GPL, MIT, Apache)</li>
+              <li>Utilisation des API et services tiers</li>
+              <li>Droits sur le code source développé</li>
+            </ul>
+          </article>
+
+          <article class="juridique-item">
+            <h3>🌐 Loi pour la Confiance Numérique</h3>
+            <p class="meta">Dernière mise à jour : Janvier 2025</p>
+            <p>Cadre juridique pour le commerce électronique et la dématérialisation.</p>
+            <ul>
+              <li>Obligations d'information des consommateurs</li>
+              <li>Validité des signatures électroniques</li>
+              <li>Conservation des preuves numériques</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer>© 2025 Elio Spaeth</footer>
+    </div>
+
+    <script>
+      // Flux RSS adaptés BTS SIO SLAM
+      const rssFeeds = [
+        {
+          name: "Developpez.com",
+          url: "https://www.developpez.com/index/rss",
+          category: "dev",
+          icon: "💻",
+          description: "Actualités développement et tutoriels"
+        },
+        {
+          name: "ZDNet France",
+          url: "https://www.zdnet.fr/feeds/rss/actualites/",
+          category: "sio",
+          icon: "📰",
+          description: "Actualités informatique professionnelle"
+        },
+        {
+          name: "Le Monde Informatique",
+          url: "https://www.lemondeinformatique.fr/feed/rss/",
+          category: "sio",
+          icon: "🖥️",
+          description: "News IT et entreprises"
+        },
+        {
+          name: "Journal du Net",
+          url: "https://www.journaldunet.com/rss/",
+          category: "dev",
+          icon: "🌐",
+          description: "Actualités web et digital"
+        },
+        {
+          name: "GitHub Blog",
+          url: "https://github.blog/feed/",
+          category: "dev",
+          icon: "📁",
+          description: "Nouveautés GitHub et développement"
+        },
+        {
+          name: "Stack Overflow Blog",
+          url: "https://stackoverflow.blog/feed/",
+          category: "dev",
+          icon: "❓",
+          description: "Conseils développement et carrière"
+        },
+        {
+          name: "ANSSI - Actualités",
+          url: "https://www.ssi.gouv.fr/feed/",
+          category: "secu",
+          icon: "🔐",
+          description: "Alertes sécurité nationales"
+        },
+        {
+          name: "OpenClassrooms News",
+          url: "https://openclassrooms.com/fr/feed",
+          category: "sio",
+          icon: "🎓",
+          description: "Formation et pédagogie informatique"
+        }
+      ];
+
+      const RSS2JSON_API_KEY = 'hf35yyb82tie6fsgbgjyin8lzkfjlmoewg98yuwd';
+      const RSS2JSON_URL = 'https://api.rss2json.com/v1/api.json';
+
+      document.addEventListener('DOMContentLoaded', function() {
+        loadRSSFeeds();
+        setupFilterButtons();
+      });
+
+      async function loadRSSFeeds() {
+        const feedsContainer = document.querySelector('.rss-feeds');
+        
+        try {
+          const feedPromises = rssFeeds.map(feed => loadFeed(feed));
+          const results = await Promise.allSettled(feedPromises);
+          
+          feedsContainer.innerHTML = '';
+          
+          let hasContent = false;
+          
+          results.forEach((result, index) => {
+            if (result.status === 'fulfilled' && result.value && result.value.items.length > 0) {
+              const feedElement = createFeedElement(rssFeeds[index], result.value);
+              feedsContainer.appendChild(feedElement);
+              hasContent = true;
+            }
+          });
+          
+          if (!hasContent) {
+            feedsContainer.innerHTML = `
+              <div class="error-message">
+                <p>📡 Aucune actualité disponible pour le moment.</p>
+                <p class="muted">Les flux RSS mettent parfois quelques minutes à se charger.</p>
+              </div>
+            `;
+          }
+          
+        } catch (error) {
+          console.error('Erreur lors du chargement des flux:', error);
+          feedsContainer.innerHTML = `
+            <div class="error-message">
+              <p>❌ Impossible de charger les actualités.</p>
+              <button class="retry-btn" onclick="loadRSSFeeds()">Réessayer</button>
+            </div>
+          `;
+        }
+      }
+
+      async function loadFeed(feedConfig) {
+        // Pour certains flux qui peuvent poser problème, on utilise une solution de secours
+        const apiUrl = `${RSS2JSON_URL}?rss_url=${encodeURIComponent(feedConfig.url)}&api_key=${RSS2JSON_API_KEY}&count=3`;
+        
+        try {
+          const response = await fetch(apiUrl);
+          if (!response.ok) throw new Error('HTTP error');
+          
+          const data = await response.json();
+          if (data.status !== 'ok') throw new Error('Invalid RSS feed');
+          
+          // Nettoyer les données pour éviter les images géantes
+          const cleanItems = data.items.map(item => ({
+            ...item,
+            // Supprimer les balises image de la description
+            description: item.description ? item.description.replace(/<img[^>]*>/g, '') : ''
+          }));
+          
+          return {
+            items: cleanItems,
+            feed: data.feed
+          };
+        } catch (error) {
+          console.warn(`Flux ${feedConfig.name} non disponible:`, error);
+          // Retourner des données vides plutôt que de faire échouer tout le chargement
+          return { items: [], feed: { title: feedConfig.name } };
+        }
+      }
+
+      function createFeedElement(feedConfig, feedData) {
+        const feedElement = document.createElement('div');
+        feedElement.className = `rss-feed ${feedConfig.category}`;
+        feedElement.setAttribute('data-category', feedConfig.category);
+        
+        const articlesHTML = feedData.items.map((article, index) => {
+          // Nettoyer le titre et la description
+          const cleanTitle = article.title.replace(/<[^>]*>/g, '').substring(0, 80) + (article.title.length > 80 ? '...' : '');
+          const cleanDescription = article.description 
+            ? article.description.replace(/<[^>]*>/g, '').substring(0, 120) + '...'
+            : 'Aucune description disponible';
+            
+          const pubDate = article.pubDate ? new Date(article.pubDate).toLocaleDateString('fr-FR') : 'Date inconnue';
+          
+          return `
+          <article class="rss-article">
+            <h4>
+              <a href="${article.link}" target="_blank" rel="noopener">
+                ${cleanTitle}
+              </a>
+            </h4>
+            <p class="article-meta">
+              ${pubDate} • ${feedConfig.name}
+            </p>
+            <p class="article-excerpt">
+              ${cleanDescription}
+            </p>
+            <a href="${article.link}" target="_blank" rel="noopener" class="article-link">
+              Lire la suite →
+            </a>
+          </article>
+        `}).join('');
+        
+        feedElement.innerHTML = `
+          <div class="feed-header">
+            <div class="feed-info">
+              <h3>${feedConfig.icon} ${feedConfig.name}</h3>
+              <p class="feed-description">${feedConfig.description}</p>
+            </div>
+            <span class="feed-badge ${feedConfig.category}">${getCategoryLabel(feedConfig.category)}</span>
+          </div>
+          <div class="articles-container">
+            ${articlesHTML}
+          </div>
+        `;
+        
+        return feedElement;
+      }
+
+      function getCategoryLabel(category) {
+        const labels = {
+          'dev': 'Développement',
+          'sio': 'BTS SIO',
+          'secu': 'Sécurité'
+        };
+        return labels[category] || category;
+      }
+
+      function setupFilterButtons() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        let rssFeedsElements = document.querySelectorAll('.rss-feed');
+
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            // Re-sélectionner les éléments à chaque clic
+            rssFeedsElements = document.querySelectorAll('.rss-feed');
+            
+            rssFeedsElements.forEach(feed => {
+              if (filter === 'all' || feed.getAttribute('data-category') === filter) {
+                feed.style.display = 'block';
+                setTimeout(() => {
+                  feed.style.opacity = '1';
+                  feed.style.transform = 'translateY(0)';
+                }, 50);
+              } else {
+                feed.style.opacity = '0';
+                feed.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                  feed.style.display = 'none';
+                }, 300);
+              }
+            });
+          });
+        });
+      }
+
+      // Recharger manuellement
+      window.retryFeed = function() {
+        loadRSSFeeds();
+      };
+    </script>
+  </body>
+</html>
