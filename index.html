@@ -26,55 +26,181 @@
         </nav>
       </header>
 
-      <section class="card">
-        <h2>Bienvenue sur mon portfolio</h2>
-        <p>
-          Je suis <strong>Elio Spaeth</strong>, étudiant en
-          <strong>BTS SIO option SLAM</strong> à Strasbourg. Ce site présente
-          mes compétences, projets, expériences et veille technologique.
-        </p>
-        <p>
-          Télécharger mon CV :
-          <a href="assets/CV_Elio_SPAETH.pdf" download>CV Elio Spaeth.pdf</a>
-        </p>
-      </section>
-      <section class="card" id="competences">
-        <h2>Compétences principales</h2>
-        <ul class="muted">
-          <li>
-            <strong>Langages :</strong> Python, PHP, JavaScript, HTML, CSS,
-            Windev
-          </li>
-          <li><strong>Bases de données :</strong> MySQL, SQLite</li>
-          <li>
-            <strong>Outils :</strong> Git, Linux, Windows, Virtualisation, VBA
-          </li>
-          <li><strong>Sécurité :</strong> RGPD, OSINT, hashing/salt</li>
-        </ul>
-      </section>
-      <section class="card">
-        <h2>Projets récents</h2>
-        <div class="projects">
-          <a href="projet-musique.html" class="proj clickable">
-            <h3>Application de musique</h3>
-            <p class="meta">JS — VM Serveur</p>
-            <p>Interface de téléchargement et écoute musicale sur serveur personnel.</p>
-            <span class="project-link">Voir le projet →</span>
-          </a>
-          <a href="projet-bot-discord.html" class="proj clickable">
-            <h3>Bot Discord</h3>
-            <p class="meta">Python</p>
-            <p>Automatisation et gestion d'activités sur serveur RP.</p>
-            <span class="project-link">Voir le projet →</span>
-          </a>
-          <a href="projet-password-manager.html" class="proj clickable">
-            <h3>Gestionnaire de mots de passe</h3>
-            <p class="meta">Python / SQLite</p>
-            <p>Stockage et chiffrement des mots de passe de manière sécurisée.</p>
-            <span class="project-link">Voir le projet →</span>
-          </a>
+      <section class="card hero-card fade-in">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Elio Spaeth</h2>
+            <p class="hero-subtitle">Étudiant en BTS SIO — Spécialité SLAM</p>
+            <p class="hero-location">Strasbourg, France</p>
+
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat-number">Bac +2</span>
+                <span class="hero-stat-label">Années d'étude</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-number">8+</span>
+                <span class="hero-stat-label">Projets réalisés</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-number">18+</span>
+                <span class="hero-stat-label">Technos maîtrisées</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="assets/CV_ELIO_SPAETH.pdf" download class="btn primary">
+              Télécharger mon CV
+            </a>
+            <a href="contact.html" class="btn secondary"> Me contacter </a>
+          </div>
         </div>
       </section>
+
+      <main class="dashboard">
+        <div class="column">
+          <section class="card fade-in">
+            <h2>Compétences techniques</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Langages</h3>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <div class="tech-icon python">Py</div>
+                    <span class="tech-name">Python</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon php">PHP</div>
+                    <span class="tech-name">PHP</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon javascript">JS</div>
+                    <span class="tech-name">JavaScript</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon java">Java</div>
+                    <span class="tech-name">Java</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon cpp">C++</div>
+                    <span class="tech-name">C++</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon powershell">PS</div>
+                    <span class="tech-name">PowerShell</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon html-css">Web</div>
+                    <span class="tech-name">HTML/CSS</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon windev">WD</div>
+                    <span class="tech-name">Windev</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Bases de données</h3>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <div class="tech-icon mysql">SQL</div>
+                    <span class="tech-name">MySQL</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon sqlite">SQL</div>
+                    <span class="tech-name">SQLite</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon orm">ORM</div>
+                    <span class="tech-name">ORM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Outils</h3>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <div class="tech-icon git">Git</div>
+                    <span class="tech-name">Git</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon linux">Lx</div>
+                    <span class="tech-name">Linux</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon virtualisation">VM</div>
+                    <span class="tech-name">Virtualisation</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon vba">VBA</div>
+                    <span class="tech-name">VBA</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Sécurité</h3>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <div class="tech-icon rgpd">GDPR</div>
+                    <span class="tech-name">RGPD</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon osint">OSI</div>
+                    <span class="tech-name">OSINT</span>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon security">Sec</div>
+                    <span class="tech-name">Hashing/Salt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="card fade-in">
+            <h2>Projets récents</h2>
+            <div class="projects-preview">
+              <a href="projet-musique.html" class="project-preview">
+                <h3>Application de musique</h3>
+                <p class="project-meta">JavaScript — VM Serveur</p>
+                <p>
+                  Interface de téléchargement et écoute musicale sur serveur
+                  personnel
+                </p>
+                <span class="project-link">Voir le projet →</span>
+              </a>
+
+              <a href="projet-bot-discord.html" class="project-preview">
+                <h3>Bot Discord</h3>
+                <p class="project-meta">Python</p>
+                <p>Automatisation et gestion d'activités sur serveur RP</p>
+                <span class="project-link">Voir le projet →</span>
+              </a>
+
+              <a href="projet-password-manager.html" class="project-preview">
+                <h3>Gestionnaire de mots de passe</h3>
+                <p class="project-meta">Python / SQLite</p>
+                <p>
+                  Stockage et chiffrement des mots de passe de manière sécurisée
+                </p>
+                <span class="project-link">Voir le projet →</span>
+              </a>
+            </div>
+            <div class="view-all">
+              <a href="projets.html" class="btn outline"
+                >Voir tous les projets →</a
+              >
+            </div>
+          </section>
+        </div>
+      </main>
+
       <footer>© 2025 Elio Spaeth</footer>
     </div>
   </body>
